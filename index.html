@@ -3,174 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Chandra Dhakal - Health Economist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Chandra K. Dhakal, PhD | Health Economist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --primary: #2c3e50;
-            --secondary: #3498db;
-            --accent: #e74c3c;
-            --light: #f8f9fa;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        nav {
-            background: var(--primary);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        nav .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        nav .logo { font-size: 1.5rem; font-weight: 700; }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        nav a:hover { color: var(--secondary); }
-        .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 5rem 2rem;
-            text-align: center;
-        }
-        .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-        .hero .credentials { font-size: 1.2rem; margin-bottom: 1rem; }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        .social-links a {
-            color: white;
-            font-size: 2rem;
-            transition: transform 0.3s;
-        }
-        .social-links a:hover { transform: scale(1.2); }
-        section {
-            padding: 4rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        section:nth-child(even) { background: var(--light); }
-        section h2 {
-            color: var(--primary);
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-            border-bottom: 3px solid var(--secondary);
-            padding-bottom: 1rem;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-        }
-        .stat-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .stat-card .number { font-size: 3rem; font-weight: 700; }
-        footer {
-            background: var(--primary);
-            color: white;
-            text-align: center;
-            padding: 3rem 2rem;
-        }
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            nav ul { gap: 1rem; }
-        }
+        :root { --cdc-blue: #003366; --gold-accent: #D4AF37; }
+        .bg-cdc { background-color: var(--cdc-blue); }
+        .text-cdc { color: var(--cdc-blue); }
+        .border-gold { border-color: var(--gold-accent); }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
-<body>
-    <nav>
-        <div class="container">
-            <div class="logo">Dr. Chandra K. Dhakal</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50 border-b-4 border-gold">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-cdc">Chandra K. Dhakal, <span class="text-gray-500">PhD</span></div>
+            <div class="hidden md:flex space-x-8 font-semibold uppercase text-sm tracking-widest">
+                <a href="#home" class="hover:text-blue-700 transition">Home</a>
+                <a href="#experience" class="hover:text-blue-700 transition">Experience</a>
+                <a href="#research" class="hover:text-blue-700 transition">Research</a>
+                <a href="#skills" class="hover:text-blue-700 transition">Skills</a>
+                <a href="#personal" class="hover:text-blue-700 transition">Personal</a>
+            </div>
         </div>
     </nav>
 
-    <div class="hero">
-        <h1>Chandra K. Dhakal, PhD</h1>
-        <div class="credentials">Health Economist | CDC Foundation</div>
-        <p style="font-size: 1.2rem; margin: 1rem auto; max-width: 800px;">Transforming complex data into actionable public health solutions</p>
-        
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/chandra-dhakal" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://scholar.google.com" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-            <a href="mailto:tez5@cdc.gov" title="Email"><i class="fas fa-envelope"></i></a>
+    <header id="home" class="bg-cdc text-white py-24 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Health Economist & Data Scientist</h1>
+            <p class="text-2xl text-blue-100 mb-8 max-w-3xl leading-relaxed">
+                Transforming complex data into actionable public health solutions for the 
+                <span class="text-white border-b-2 border-gold">CDC Foundation</span>.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="mailto:cdhakal@cdcfoundation.org" class="bg-white text-cdc px-8 py-3 rounded-full font-bold shadow-lg hover:bg-gray-100 transition">Email Me</a>
+                <a href="https://linkedin.com/in/chandra-dhakal" target="_blank" class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-cdc transition">LinkedIn Profile</a>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <section>
-        <h2>Academic Impact</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="number">986</div>
-                <div class="label">Citations</div>
+    <section class="bg-white py-8 border-b">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><p class="text-3xl font-bold text-cdc">980+</p><p class="text-sm text-gray-500 uppercase tracking-widest">Citations</p></div>
+            <div><p class="text-3xl font-bold text-cdc">15</p><p class="text-sm text-gray-500 uppercase tracking-widest">h-index</p></div>
+            <div><p class="text-3xl font-bold text-cdc">10+</p><p class="text-sm text-gray-500 uppercase tracking-widest">Years Experience</p></div>
+            <div><p class="text-3xl font-bold text-cdc">20+</p><p class="text-sm text-gray-500 uppercase tracking-widest">Publications</p></div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-cdc mb-12 flex items-center">
+            <i class="fas fa-briefcase mr-4 text-gold"></i> Professional Experience
+        </h2>
+        <div class="space-y-12">
+            <div class="border-l-4 border-blue-900 pl-8 relative">
+                <div class="absolute -left-3 top-0 w-5 h-5 bg-blue-900 rounded-full border-4 border-white"></div>
+                <h3 class="text-2xl font-bold text-gray-800">Health Economist</h3>
+                <p class="text-blue-700 font-semibold mb-2">CDC Foundation | 2021 – Present</p>
+                <p class="text-gray-600 max-w-4xl">Lead research at the intersection of health economics and policy. Propose and lead economic evaluations, including cost-effectiveness analysis, to inform resource allocation within the US and internationally.</p>
             </div>
-            <div class="stat-card">
-                <div class="number">15</div>
-                <div class="label">h-index</div>
+            <div class="border-l-4 border-gray-300 pl-8 relative">
+                <h3 class="text-2xl font-bold text-gray-800">Research Assistant</h3>
+                <p class="text-blue-700 font-semibold mb-2">University of Georgia | 2016 – 2021</p>
+                <p class="text-gray-600 max-w-4xl">Applied microeconomic theories and structural econometric models to large-scale retail and health datasets.</p>
             </div>
-            <div class="stat-card">
-                <div class="number">20</div>
-                <div class="label">i10-index</div>
-            </div>
-            <div class="stat-card">
-                <div class="number">25+</div>
-                <div class="label">Publications</div>
+            <div class="border-l-4 border-gray-300 pl-8 relative">
+                <h3 class="text-2xl font-bold text-gray-800">Assistant Professor</h3>
+                <p class="text-blue-700 font-semibold mb-2">Tribhuvan University | 2014 – 2015</p>
+                <p class="text-gray-600 max-w-4xl">Led academic instruction and supervised research in agricultural economics.</p>
             </div>
         </div>
     </section>
 
-    <section id="about" style="background: var(--light);">
-        <h2>About</h2>
-        <p style="font-size: 1.1rem;">Accomplished health economist with 8+ years of experience in data analysis, program evaluation, and evidence-based policy development. PhD in Econometrics and MS in Statistics from University of Georgia.</p>
+    <section id="research" class="bg-gray-100 py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-cdc mb-12 text-center">Research Pillars</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-cdc">
+                    <h4 class="font-bold text-xl mb-3">Chronic Disease</h4>
+                    <p class="text-gray-600 text-sm italic">Economic burden estimation for Type 2 Diabetes using claims data.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-cdc">
+                    <h4 class="font-bold text-xl mb-3">AI & NLP</h4>
+                    <p class="text-gray-600 text-sm italic">Developing AgriBERT and investigating human-like biases in LLMs.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-cdc">
+                    <h4 class="font-bold text-xl mb-3">Cost-Effectiveness</h4>
+                    <p class="text-gray-600 text-sm italic">Comparing economic value of diabetes interventions for prioritization.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition border-t-4 border-cdc">
+                    <h4 class="font-bold text-xl mb-3">Simulation</h4>
+                    <p class="text-gray-600 text-sm italic">Projecting health trajectories via Markov and microsimulation models.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-white p-8 rounded shadow">
+                <h3 class="text-2xl font-bold mb-6 border-b pb-2">Recent Peer-Reviewed Publications</h3>
+                <ul class="space-y-4">
+                    <li class="flex gap-4">
+                        <span class="text-blue-900 font-bold">2024</span>
+                        <p><strong>JAMA Network Open:</strong> Trends and disparities in diabetes prevalence in the US from 2012 to 2022.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-blue-900 font-bold">2023</span>
+                        <p><strong>JPAM:</strong> Unemployment Insurance Benefit Reduction and Food Hardship.</p>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="text-blue-900 font-bold">2021</span>
+                        <p><strong>IJERPH:</strong> Predicting type 2 diabetes using logistic regression and machine learning approaches.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Dr. Chandra Dhakal | Health Economist | CDC Foundation</p>
-        <p>cdhakal@cdcfoundation.org | +1 (806) 407-0277</p>
+    <section id="skills" class="py-20 max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-cdc mb-12">Technical Toolbox</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <h4 class="text-gold font-bold uppercase mb-4 tracking-widest">Programming</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-cdc px-3 py-1 rounded text-sm font-bold">R</span>
+                    <span class="bg-blue-100 text-cdc px-3 py-1 rounded text-sm font-bold">Python</span>
+                    <span class="bg-blue-100 text-cdc px-3 py-1 rounded text-sm font-bold">SAS</span>
+                    <span class="bg-blue-100 text-cdc px-3 py-1 rounded text-sm font-bold">SQL</span>
+                    <span class="bg-blue-100 text-cdc px-3 py-1 rounded text-sm font-bold">Stata</span>
+                    <span class="bg-blue-100 text-cdc px-3 py-1 rounded text-sm font-bold">AWS</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-gold font-bold uppercase mb-4 tracking-widest">Methods</h4>
+                <ul class="text-gray-600 text-sm space-y-2">
+                    <li><i class="fas fa-check text-cdc mr-2"></i> Markov & Microsimulation</li>
+                    <li><i class="fas fa-check text-cdc mr-2"></i> Causal Inference</li>
+                    <li><i class="fas fa-check text-cdc mr-2"></i> Cost-Benefit Analysis</li>
+                    <li><i class="fas fa-check text-cdc mr-2"></i> Machine Learning (Scikit-Learn)</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-gold font-bold uppercase mb-4 tracking-widest">Tools</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-gray-200 px-3 py-1 rounded text-sm">Tableau</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded text-sm">Power BI</span>
+                    <span class="bg-gray-200 px-3 py-1 rounded text-sm">LaTeX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="personal" class="py-20 bg-cdc text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Life Outside the Lab</h2>
+            <p class="text-xl leading-relaxed mb-8 opacity-90">
+                Beyond econometrics, I am a devoted family man. I treasure every moment with my wife, 
+                <strong>Usha Bhatta</strong>, and our daughter, <strong>Chaha</strong>. 
+                Whether we are traveling globally or I am mastering a new variety of 
+                <strong>Daal</strong> in the kitchen, family and lifelong learning remain my core pillars.
+            </p>
+            <div class="flex justify-center gap-8 text-3xl opacity-75">
+                <i class="fas fa-plane" title="Travel"></i>
+                <i class="fas fa-utensils" title="Cooking"></i>
+                <i class="fas fa-book-open" title="Reading"></i>
+                <i class="fas fa-chart-line" title="Stock Market"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white text-center">
+        <p class="font-bold text-cdc">Dr. Chandra K. Dhakal</p>
+        <p class="text-gray-500 mb-6 text-sm">CDC Foundation | Health Economist</p>
+        <div class="flex justify-center space-x-6 text-xl">
+            <a href="mailto:tez5@cdc.gov" class="text-cdc hover:text-blue-500 transition"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/chandra-dhakal" target="_blank" class="text-cdc hover:text-blue-500 transition"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-    </script>
 </body>
 </html>
