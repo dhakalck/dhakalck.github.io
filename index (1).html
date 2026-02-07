@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Chandra K. Dhakal - Health Economist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #f8f9fa;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        nav {
+            background: var(--primary);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav .logo { font-size: 1.5rem; font-weight: 700; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: var(--secondary); }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+        .hero .credentials { font-size: 1.2rem; margin-bottom: 1rem; }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .social-links a {
+            color: white;
+            font-size: 2rem;
+            transition: transform 0.3s;
+        }
+        .social-links a:hover { transform: scale(1.2); }
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section:nth-child(even) { background: var(--light); }
+        section h2 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 1rem;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-card .number { font-size: 3rem; font-weight: 700; }
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            nav ul { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">Dr. Chandra K. Dhakal</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Chandra K. Dhakal, PhD</h1>
+        <div class="credentials">Health Economist | CDC Foundation</div>
+        <p style="font-size: 1.2rem; margin: 1rem auto; max-width: 800px;">Transforming complex data into actionable public health solutions</p>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/chandra-dhakal" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://scholar.google.com" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+            <a href="mailto:tez5@cdc.gov" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <section>
+        <h2>Academic Impact</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number">986</div>
+                <div class="label">Citations</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">15</div>
+                <div class="label">h-index</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">20</div>
+                <div class="label">i10-index</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">25+</div>
+                <div class="label">Publications</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" style="background: var(--light);">
+        <h2>About</h2>
+        <p style="font-size: 1.1rem;">Accomplished health economist with 8+ years of experience in data analysis, program evaluation, and evidence-based policy development. PhD in Econometrics and MS in Statistics from University of Georgia.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dr. Chandra K. Dhakal | Health Economist | CDC Foundation</p>
+        <p>tez5@cdc.gov | +1 (806) 407-0277</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
