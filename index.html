@@ -3,235 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandra Dhakal, PhD | Health Economist Portfolio</title>
+    <title>Chandra K. Dhakal, PhD | Professional Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        :root { --cdc-blue: #003366; --gold: #D4AF37; --ice: #f0f4f8; }
+        :root { --cdc-blue: #003366; --gold: #D4AF37; }
         html { scroll-behavior: smooth; }
         .bg-cdc { background-color: var(--cdc-blue); }
         .text-cdc { color: var(--cdc-blue); }
-        .accent-gold { color: var(--gold); }
-        .section-padding { padding: 5rem 1.5rem; }
+        .border-gold { border-color: var(--gold); }
+        .nav-link:hover { color: var(--gold); border-bottom: 2px solid var(--gold); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
     <nav class="bg-white shadow-xl sticky top-0 z-50 border-b-4 border-gold">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex flex-col">
-                <span class="text-2xl font-bold text-cdc tracking-tight">CHANDRA DHAKAL, PhD</span>
-                <span class="text-xs font-bold text-gray-500 uppercase tracking-widest">Health Economist & Data Scientist</span>
-            </div>
-            <div class="hidden lg:flex space-x-6 font-bold text-xs uppercase tracking-tighter">
-                <a href="#about" class="hover:text-blue-700">About</a>
-                <a href="#experience" class="hover:text-blue-700">Experience</a>
-                <a href="#research" class="hover:text-blue-700">Research</a>
-                <a href="#publications" class="hover:text-blue-700">Publications</a>
-                <a href="#impact" class="hover:text-blue-700">Impact</a>
-                <a href="#resources" class="text-blue-600 border-b-2 border-blue-600">Downloads</a>
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+                <div class="mb-2 lg:mb-0">
+                    <span class="text-xl font-bold text-cdc tracking-tight uppercase">Chandra K. Dhakal, PhD</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 text-[10px] font-bold uppercase tracking-tighter text-gray-600">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#research" class="nav-link">Research</a>
+                    <a href="#publications" class="nav-link">Publications</a>
+                    <a href="#impact" class="nav-link">Impact</a>
+                    <a href="#resources" class="text-blue-700 border-b-2 border-blue-700">Downloads</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <header class="bg-cdc text-white py-24 border-b-8 border-gold">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h1 class="text-5xl font-extrabold mb-6 leading-tight">Bridging Econometrics & Global Health Policy</h1>
-                <p class="text-xl text-blue-100 mb-8 leading-relaxed opacity-90">
-                    Health Economist supporting the <strong>CDC Foundation</strong>. 
-                    Specializing in decision modeling, cost-effectiveness analysis, and the economic evaluation of non-infectious diseases.
+    <header id="home" class="bg-cdc text-white py-20 border-b-8 border-gold">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h1 class="text-5xl font-extrabold mb-4 leading-tight">Chandra K. Dhakal, PhD</h1>
+            <p class="text-2xl text-blue-100 font-light mb-8">Transforming Complex Data into Actionable Global Health Policy</p>
+            <div class="max-w-3xl mx-auto bg-blue-800 bg-opacity-40 p-8 rounded-xl border border-blue-700 shadow-inner">
+                <h3 class="text-xl font-bold mb-4 accent-gold uppercase tracking-widest text-yellow-400">Executive Summary</h3>
+                <p class="text-lg leading-relaxed opacity-90">
+                    Health Economist at the <strong>CDC Foundation</strong>, supporting the Division of Global Health Protection. With over 10 years of experience, I bridge the gap between rigorous quantitative research and real-world policy. My mission is to translate data into actionable interventions that improve lives globally.
                 </p>
-                <div class="flex gap-4">
-                    <a href="#resources" class="bg-white text-cdc px-6 py-3 rounded shadow-lg font-bold hover:bg-gray-100 transition">View Portfolio</a>
-                    <a href="#contact" class="border-2 border-white px-6 py-3 rounded font-bold hover:bg-white hover:text-cdc transition">Contact</a>
-                </div>
-            </div>
-            <div class="hidden md:block bg-blue-800 p-8 rounded-2xl shadow-inner border border-blue-700">
-                <div class="flex items-center space-x-4 mb-4">
-                    <div class="h-3 w-3 rounded-full bg-red-400"></div>
-                    <div class="h-3 w-3 rounded-full bg-yellow-400"></div>
-                    <div class="h-3 w-3 rounded-full bg-green-400"></div>
-                </div>
-                <code class="text-blue-200 text-sm">
-                    # Economic Evaluation Script<br>
-                    library(HEEMOD)<br>
-                    model <- define_strategy(<br>
-                    &nbsp;&nbsp;transition = markov_matrix,<br>
-                    &nbsp;&nbsp;state_A = define_state(cost=100, utility=0.8),<br>
-                    &nbsp;&nbsp;state_B = define_state(cost=500, utility=0.4)<br>
-                    )<br>
-                    run_model(model, cycles=20)
-                </code>
             </div>
         </div>
     </header>
 
-    <section id="about" class="section-padding max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-12">
-            <div class="md:col-span-2">
-                <h2 class="text-3xl font-bold text-cdc mb-6 border-l-8 border-gold pl-4 uppercase tracking-wide">Professional Mission</h2>
-                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                    Originally from Nepal, my career has been defined by a transition from agricultural economics to high-stakes global health protection. I hold a <strong>Ph.D. in Applied Economics</strong> and a <strong>Dual MS in Statistics and Economics</strong> from the University of Georgia. 
+    <section id="about" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold text-cdc mb-6 border-l-8 border-gold pl-4">BACKGROUND & PHILOSOPHY</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Originally from Nepal, my career has spanned Kathmandu, Texas, and Georgia. My journey is defined by a transition from agricultural economics to the high-stakes intersection of statistics and global health economics.
                 </p>
-                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                    My work within the <strong>Bloomberg Philanthropies Data for Health Initiative</strong> focuses on making complex simulation models accessible to government leaders. I believe data is only as valuable as the policy it informs, and I am dedicated to providing evidence-based resource allocation strategies to ministries of health globally.
+                <p class="text-gray-700 leading-relaxed mb-6 italic">
+                    "I believe data is only as valuable as the policy it informs. My work focuses on making complex simulation models accessible to government leaders to ensure evidence-based resource allocation."
                 </p>
+                <div class="bg-blue-50 p-6 rounded-lg border-t-4 border-cdc">
+                    <h4 class="font-bold text-cdc mb-2"><i class="fas fa-heart mr-2"></i> The Human Side</h4>
+                    <p class="text-sm text-gray-600">Devoted family man to my wife, <strong>Usha Bhatta</strong>, and daughter, <strong>Chaha</strong>. I am a master of various <strong>Daal</strong> recipes, an avid reader of classical literature, and a keen observer of AI-sector stock trends.</p>
+                </div>
             </div>
-            <div class="bg-ice p-8 rounded-xl">
-                <h3 class="font-bold text-cdc mb-4 uppercase text-sm">Core Value Prop</h3>
-                <ul class="space-y-4 text-sm font-medium">
-                    <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-3"></i> 10+ Years Quantitative Experience</li>
-                    <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-3"></i> Advanced Markov & Microsimulation</li>
-                    <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-3"></i> Expertise in US Safety Net Programs</li>
-                    <li class="flex items-start"><i class="fas fa-check text-green-600 mt-1 mr-3"></i> Global Training of Trainers (TOT) Lead</li>
+            <div class="bg-gray-100 p-8 rounded-xl shadow-inner">
+                <h3 class="font-bold text-cdc mb-4 uppercase tracking-widest text-sm">Core Value Proposition</h3>
+                <ul class="space-y-4 font-medium">
+                    <li class="flex items-start"><i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i> Structural Econometric Modeling</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i> Global Health Equity Analysis</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i> Large-scale Scanner Data Analytics</li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i> Data to Policy (D2P) Integration</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="research" class="bg-white section-padding">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-center text-4xl font-extrabold text-cdc mb-16">The Four Pillars of My Research</h2>
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="p-6 border-b-4 border-blue-900 bg-gray-50 rounded-lg">
-                    <div class="text-3xl mb-4 text-blue-900"><i class="fas fa-hospital-user"></i></div>
-                    <h4 class="font-bold text-lg mb-2">Chronic Disease Burden</h4>
-                    <p class="text-sm text-gray-600">Quantifying societal impacts of Diabetes using claims data and structural models.</p>
+    <section id="education" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-cdc mb-12 text-center uppercase tracking-widest">Academic Foundation</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 border rounded-lg hover:shadow-lg transition bg-gray-50">
+                    <h4 class="font-bold text-blue-900">Ph.D. in Econometrics & Quantitative Economics</h4>
+                    <p class="text-sm font-semibold text-gray-600">University of Georgia | 2022</p>
+                    <p class="text-xs mt-2 italic text-blue-700">Focus: Applied Microeconometrics, Health Economics</p>
                 </div>
-                <div class="p-6 border-b-4 border-blue-900 bg-gray-50 rounded-lg">
-                    <div class="text-3xl mb-4 text-blue-900"><i class="fas fa-vial"></i></div>
-                    <h4 class="font-bold text-lg mb-2">Simulation Modeling</h4>
-                    <p class="text-sm text-gray-600">Mastering Markov processes to project long-term health and economic outcomes.</p>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition bg-gray-50">
+                    <h4 class="font-bold text-blue-900">M.S. in Statistics</h4>
+                    <p class="text-sm font-semibold text-gray-600">University of Georgia | 2021</p>
+                    <p class="text-xs mt-2 italic text-blue-700">Focus: Mathematical Statistics and Applied Linear Models</p>
                 </div>
-                <div class="p-6 border-b-4 border-blue-900 bg-gray-50 rounded-lg">
-                    <div class="text-3xl mb-4 text-blue-900"><i class="fas fa-balance-scale"></i></div>
-                    <h4 class="font-bold text-lg mb-2">Causal Inference</h4>
-                    <p class="text-sm text-gray-600">Evaluating SNAP and UI benefit shifts using quasi-experimental designs.</p>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition bg-gray-50">
+                    <h4 class="font-bold text-blue-900">M.S. in Applied Economics</h4>
+                    <p class="text-sm font-semibold text-gray-600">Texas Tech University | 2016</p>
                 </div>
-                <div class="p-6 border-b-4 border-blue-900 bg-gray-50 rounded-lg">
-                    <div class="text-3xl mb-4 text-blue-900"><i class="fas fa-brain"></i></div>
-                    <h4 class="font-bold text-lg mb-2">AI in Agriculture</h4>
-                    <p class="text-sm text-gray-600">Pioneering NLP via AgriBERT and exploring algorithmic bias in LLMs.</p>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition bg-gray-50">
+                    <h4 class="font-bold text-blue-900">B.S. in Agriculture (Ag Economics)</h4>
+                    <p class="text-sm font-semibold text-gray-600">Tribhuvan University, Nepal</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="resources" class="section-padding bg-cdc text-white">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold mb-4">Resources & Downloads</h2>
-                <p class="text-blue-200">Access full-text research, academic statements, and professional materials.</p>
+    <section id="experience" class="py-20 max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-cdc mb-12 border-l-8 border-gold pl-4 uppercase">Professional Experience</h2>
+        <div class="space-y-10">
+            <div class="relative pl-8 border-l-2 border-gray-200">
+                <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-cdc"></div>
+                <h3 class="text-2xl font-bold text-gray-800">Health Economist / Data to Policy Lead</h3>
+                <p class="text-blue-700 font-bold mb-3">CDC Foundation | 2021 – Present</p>
+                <ul class="list-disc ml-5 text-gray-600 space-y-2">
+                    <li>Leading the <strong>Bloomberg Philanthropies Data for Health Initiative</strong> supporting international ministries.</li>
+                    <li>Designing cost-effectiveness and cost-utility analyses to prioritize global health programs.</li>
+                    <li>Applying econometric methods to enhance global health program impact and equity.</li>
+                </ul>
             </div>
-            <div class="grid md:grid-cols-3 gap-6">
-                <a href="Chandra_Dhakal_CV.pdf" download class="bg-blue-800 p-6 rounded-lg hover:bg-blue-700 transition flex items-center justify-between border border-blue-600">
-                    <div class="flex items-center"><i class="fas fa-file-pdf text-2xl mr-4"></i> <span class="font-bold">Curriculum Vitae</span></div>
-                    <i class="fas fa-download opacity-50"></i>
-                </a>
-                <a href="Research_Statement.pdf" download class="bg-blue-800 p-6 rounded-lg hover:bg-blue-700 transition flex items-center justify-between border border-blue-600">
-                    <div class="flex items-center"><i class="fas fa-flask text-2xl mr-4"></i> <span class="font-bold">Research Statement</span></div>
-                    <i class="fas fa-download opacity-50"></i>
-                </a>
-                <a href="Selected_Papers.pdf" download class="bg-blue-800 p-6 rounded-lg hover:bg-blue-700 transition flex items-center justify-between border border-blue-600">
-                    <div class="flex items-center"><i class="fas fa-book text-2xl mr-4"></i> <span class="font-bold">Selected Papers</span></div>
-                    <i class="fas fa-download opacity-50"></i>
-                </a>
-                <a href="Presentation.pptx" download class="bg-blue-800 p-6 rounded-lg hover:bg-blue-700 transition flex items-center justify-between border border-blue-600">
-                    <div class="flex items-center"><i class="fas fa-file-powerpoint text-2xl mr-4"></i> <span class="font-bold">Recent Presentation</span></div>
-                    <i class="fas fa-download opacity-50"></i>
-                </a>
-                <a href="Cover_Letter_Sample.pdf" download class="bg-blue-800 p-6 rounded-lg hover:bg-blue-700 transition flex items-center justify-between border border-blue-600">
-                    <div class="flex items-center"><i class="fas fa-envelope-open-text text-2xl mr-4"></i> <span class="font-bold">Sample Cover Letter</span></div>
-                    <i class="fas fa-download opacity-50"></i>
-                </a>
-                <a href="Research_Portfolio.pdf" download class="bg-blue-800 p-6 rounded-lg hover:bg-blue-700 transition flex items-center justify-between border border-blue-600">
-                    <div class="flex items-center"><i class="fas fa-briefcase text-2xl mr-4"></i> <span class="font-bold">Research Portfolio</span></div>
-                    <i class="fas fa-download opacity-50"></i>
-                </a>
+            <div class="relative pl-8 border-l-2 border-gray-200">
+                <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-gray-400"></div>
+                <h3 class="text-2xl font-bold text-gray-800">Assistant Professor</h3>
+                <p class="text-blue-700 font-bold mb-3">Tribhuvan University, Kathmandu | 2014 – 2015</p>
+                <p class="text-gray-600">Led academic instruction and supervised research in agricultural economics, mentoring the next generation of researchers in Nepal.</p>
+            </div>
+            <div class="relative pl-8 border-l-2 border-gray-200">
+                <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-gray-400"></div>
+                <h3 class="text-2xl font-bold text-gray-800">Research Associate</h3>
+                <p class="text-blue-700 font-bold mb-3">Nepal Development Research Institute | 2012 – 2013</p>
+                <p class="text-gray-600">Conducted foundational research on regional development policy and agricultural adaptation strategies.</p>
             </div>
         </div>
     </section>
 
-    <section id="publications" class="section-padding max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold text-cdc mb-10 uppercase tracking-widest">Selected Peer-Reviewed Publications</h2>
-        <div class="space-y-8">
-            <div class="p-6 bg-white shadow-sm border-l-4 border-cdc hover:shadow-md transition">
-                <span class="text-blue-600 font-bold text-sm">JAMA Network Open, 2024</span>
-                <h4 class="text-xl font-bold mt-1">Trends and disparities in diabetes prevalence in the United States from 2012 to 2022.</h4>
-                <p class="text-gray-500 text-sm mt-2 italic">Neupane, S. and Dhakal, C.</p>
-            </div>
-            <div class="p-6 bg-white shadow-sm border-l-4 border-cdc hover:shadow-md transition">
-                <span class="text-blue-600 font-bold text-sm">Information, 2024</span>
-                <h4 class="text-xl font-bold mt-1">Exploring new frontiers in agricultural NLP: Investigating human-like biases in LLMs.</h4>
-                <p class="text-gray-500 text-sm mt-2 italic">Rezayi, S., Liu, Z., Wu, Z., Dhakal, C., et al.</p>
-            </div>
-            <div class="p-6 bg-white shadow-sm border-l-4 border-cdc hover:shadow-md transition">
-                <span class="text-blue-600 font-bold text-sm">Journal of Policy Analysis and Management, 2023</span>
-                <h4 class="text-xl font-bold mt-1">Unemployment Insurance Benefit Reduction and Food Hardship.</h4>
-                <p class="text-gray-500 text-sm mt-2 italic">Acharya, B. and Dhakal, C.</p>
-            </div>
-        </div>
-        <div class="mt-8 text-center">
-            <a href="https://scholar.google.com/citations?user=your-id" target="_blank" class="text-blue-700 font-bold underline"><i class="fas fa-graduation-cap"></i> View Full Google Scholar Profile (980+ Citations)</a>
-        </div>
-    </section>
-
-    <section id="impact" class="bg-ice section-padding">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-cdc mb-12 text-center uppercase">Global Impact & Upcoming Training</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="bg-white p-8 rounded-xl shadow">
-                    <h3 class="font-bold text-xl mb-6 border-b pb-2">Training of Trainers (TOT) Schedule</h3>
-                    <ul class="space-y-6">
-                        <li class="flex items-center">
-                            <div class="bg-cdc text-white p-4 rounded mr-6 font-mono">MAR 2026</div>
-                            <div>
-                                <h4 class="font-bold">Lusaka, Zambia</h4>
-                                <p class="text-gray-600 text-sm italic">Regional Data to Policy TOT Lead</p>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <div class="bg-cdc text-white p-4 rounded mr-6 font-mono">JAN 2026</div>
-                            <div>
-                                <h4 class="font-bold">Cebu, Philippines</h4>
-                                <p class="text-gray-600 text-sm italic">Economic Evaluation Decision Modeling Workshop</p>
-                            </div>
-                        </li>
-                    </ul>
+    <section id="research" class="py-20 bg-cdc text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-yellow-400 uppercase tracking-widest">Technical Research Pillars</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-blue-800 p-6 rounded-lg border-b-4 border-yellow-400">
+                    <h4 class="font-bold mb-3 uppercase text-sm">Chronic Disease</h4>
+                    <p class="text-xs opacity-80 leading-relaxed">Quantifying societal impact of Type 2 Diabetes via large-scale claims data analysis.</p>
                 </div>
-                <div>
-                    <h3 class="font-bold text-xl mb-6 border-b pb-2">Geographic Footprint</h3>
-                    <p class="text-gray-600 leading-relaxed mb-6">
-                        My work supports international ministries of health in the following regions:
-                    </p>
-                    <div class="flex flex-wrap gap-4 text-sm font-bold">
-                        <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded">Thailand</span>
-                        <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded">Bangladesh</span>
-                        <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded">Zambia</span>
-                        <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded">Philippines</span>
-                        <span class="bg-blue-100 text-blue-900 px-4 py-2 rounded">Asia (Regional)</span>
+                <div class="bg-blue-800 p-6 rounded-lg border-b-4 border-yellow-400">
+                    <h4 class="font-bold mb-3 uppercase text-sm">Simulation Modeling</h4>
+                    <p class="text-xs opacity-80 leading-relaxed">Mastering Markov Modeling and Microsimulation for dynamic health trajectory projections.</p>
+                </div>
+                <div class="bg-blue-800 p-6 rounded-lg border-b-4 border-yellow-400">
+                    <h4 class="font-bold mb-3 uppercase text-sm">Causal Inference</h4>
+                    <p class="text-xs opacity-80 leading-relaxed">Evaluating SNAP and Unemployment Insurance shifts via quasi-experimental designs.</p>
+                </div>
+                <div class="bg-blue-800 p-6 rounded-lg border-b-4 border-yellow-400">
+                    <h4 class="font-bold mb-3 uppercase text-sm">Data Science & NLP</h4>
+                    <p class="text-xs opacity-80 leading-relaxed">Pioneering AI in agriculture through <strong>AgriBERT</strong> and LLM bias research.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="grid lg:grid-cols-3 gap-16">
+            <div class="lg:col-span-2">
+                <h2 class="text-3xl font-bold text-cdc mb-8 border-l-8 border-gold pl-4 uppercase">Selected Publications</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 shadow-sm border border-gray-100 rounded hover:shadow-md transition">
+                        <span class="text-blue-600 font-bold text-xs uppercase">JAMA Network Open (2024)</span>
+                        <h4 class="font-bold mt-1 leading-tight text-lg">Trends and disparities in diabetes prevalence in the US from 2012 to 2022.</h4>
+                    </div>
+                    <div class="bg-white p-6 shadow-sm border border-gray-100 rounded hover:shadow-md transition">
+                        <span class="text-blue-600 font-bold text-xs uppercase">Information (2024)</span>
+                        <h4 class="font-bold mt-1 leading-tight text-lg">Do Large Language Models Show Human-like Biases?</h4>
+                    </div>
+                    <div class="bg-white p-6 shadow-sm border border-gray-100 rounded hover:shadow-md transition">
+                        <span class="text-blue-600 font-bold text-xs uppercase">JPAM (2023)</span>
+                        <h4 class="font-bold mt-1 leading-tight text-lg">Unemployment Insurance Benefit Reduction and Food Hardship.</h4>
+                    </div>
+                </div>
+                <div class="mt-8 flex items-center justify-between p-4 bg-gray-50 rounded italic text-sm">
+                    <div>Citations: 980+ | h-index: 15 | i10-index: 20</div>
+                    <a href="#" class="text-blue-700 font-bold underline"><i class="fas fa-graduation-cap"></i> Scholar Profile</a>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold text-cdc mb-8 uppercase tracking-widest">Technical Toolbox</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h5 class="text-xs font-bold text-gray-500 uppercase mb-2">Programming</h5>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-blue-100 text-cdc px-2 py-1 rounded text-[10px] font-bold">R</span>
+                            <span class="bg-blue-100 text-cdc px-2 py-1 rounded text-[10px] font-bold">Python</span>
+                            <span class="bg-blue-100 text-cdc px-2 py-1 rounded text-[10px] font-bold">SAS</span>
+                            <span class="bg-blue-100 text-cdc px-2 py-1 rounded text-[10px] font-bold">SQL</span>
+                            <span class="bg-blue-100 text-cdc px-2 py-1 rounded text-[10px] font-bold">Stata</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="text-xs font-bold text-gray-500 uppercase mb-2">Techniques</h5>
+                        <ul class="text-xs space-y-1 text-gray-600 font-medium">
+                            <li><i class="fas fa-check text-cdc mr-2"></i> $A/B$ Testing & Bayesian Stats</li>
+                            <li><i class="fas fa-check text-cdc mr-2"></i> Survival & Text Mining</li>
+                            <li><i class="fas fa-check text-cdc mr-2"></i> Mixed-methods Evaluation</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section-padding max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold text-cdc mb-6 uppercase">Let's Collaborate</h2>
-        <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-            I value interdisciplinary collaboration. Outside the office, I am a devoted family man to <strong>Usha Bhatta</strong> and <strong>Chaha</strong>, an avid reader, and a master of <strong>Nepali cuisines</strong>.
-        </p>
-        <div class="flex justify-center space-x-12 text-4xl mb-12 text-cdc opacity-80">
-            <a href="mailto:cdhakal@cdcfoundation.org"><i class="fas fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/chandra-dhakal" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fas fa-chart-line"></i></a>
+    <section id="impact" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-cdc mb-12 text-center uppercase tracking-widest">Global Impact & Training</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-sm border-t-8 border-cdc">
+                    <h4 class="text-lg font-bold text-cdc mb-6">Upcoming Engagements 2026</h4>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="bg-cdc text-white p-3 rounded font-mono font-bold mr-4">MAR</div>
+                            <div>
+                                <p class="font-bold">Lusaka, Zambia</p>
+                                <p class="text-xs text-gray-500">Regional D2P TOT (March 2-5)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-cdc text-white p-3 rounded font-mono font-bold mr-4">JAN</div>
+                            <div>
+                                <p class="font-bold">Cebu, Philippines</p>
+                                <p class="text-xs text-gray-500">Decision Modeling Workshop (Jan 26-30)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold text-cdc mb-6">Active Project Countries</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center p-3 bg-white rounded shadow-sm"><i class="fas fa-globe-asia mr-3 text-blue-400"></i> Thailand</div>
+                        <div class="flex items-center p-3 bg-white rounded shadow-sm"><i class="fas fa-globe-asia mr-3 text-blue-400"></i> Bangladesh</div>
+                        <div class="flex items-center p-3 bg-white rounded shadow-sm"><i class="fas fa-globe-africa mr-3 text-blue-400"></i> Zambia</div>
+                        <div class="flex items-center p-3 bg-white rounded shadow-sm"><i class="fas fa-globe-asia mr-3 text-blue-400"></i> Philippines</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="text-gray-500 text-sm">cdhakal@cdcfoundation.org | chandrakantdhakal@gmail.com | Atlanta, GA</p>
     </section>
 
-    <footer class="bg-cdc text-blue-200 py-10 border-t-4 border-gold text-center text-xs font-bold uppercase tracking-widest">
-        &copy; 2026 Chandra Dhakal, PhD | Built with GitHub Pages & Passion
+    <section class="py-20 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
+        <div>
+            <h2 class="text-2xl font-bold text-cdc mb-8 uppercase tracking-widest border-b-2 border-gold pb-2">Awards & Honors</h2>
+            <ul class="space-y-4 text-sm font-medium text-gray-700">
+                <li class="flex items-center"><i class="fas fa-award text-yellow-500 mr-3"></i> Outstanding Article Award (2020), JAAE</li>
+                <li class="flex items-center"><i class="fas fa-award text-yellow-500 mr-3"></i> Graduate School Travel Award, UGA</li>
+                <li class="flex items-center"><i class="fas fa-award text-yellow-500 mr-3"></i> Early Career Research Scholar, USAID</li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="text-2xl font-bold text-cdc mb-8 uppercase tracking-widest border-b-2 border-gold pb-2">Professional Service</h2>
+            <ul class="space-y-4 text-sm font-medium text-gray-700">
+                <li class="flex items-center"><i class="fas fa-edit text-blue-500 mr-3"></i> Reviewer: Phytopathology, MPMI</li>
+                <li class="flex items-center"><i class="fas fa-chalkboard-teacher text-blue-500 mr-3"></i> Instructor: Computational Tools (UGA)</li>
+                <li class="flex items-center"><i class="fas fa-users text-blue-500 mr-3"></i> Memberships: ASHEcon, AAEA</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="resources" class="py-20 bg-cdc text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-yellow-400 uppercase tracking-widest">Resources & Downloads</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="Chandra_Dhakal_CV.pdf" download class="flex items-center justify-between p-6 bg-blue-800 rounded-lg hover:bg-blue-700 transition border border-blue-600 shadow-md">
+                    <span class="font-bold tracking-tight">Curriculum Vitae</span>
+                    <i class="fas fa-download opacity-50"></i>
+                </a>
+                <a href="Research_Statement.pdf" download class="flex items-center justify-between p-6 bg-blue-800 rounded-lg hover:bg-blue-700 transition border border-blue-600 shadow-md">
+                    <span class="font-bold tracking-tight">Research Statement</span>
+                    <i class="fas fa-download opacity-50"></i>
+                </a>
+                <a href="Selected_Papers.pdf" download class="flex items-center justify-between p-6 bg-blue-800 rounded-lg hover:bg-blue-700 transition border border-blue-600 shadow-md">
+                    <span class="font-bold tracking-tight">Selected Papers</span>
+                    <i class="fas fa-download opacity-50"></i>
+                </a>
+                <a href="Presentation.pptx" download class="flex items-center justify-between p-6 bg-blue-800 rounded-lg hover:bg-blue-700 transition border border-blue-600 shadow-md">
+                    <span class="font-bold tracking-tight">Latest Presentation</span>
+                    <i class="fas fa-download opacity-50"></i>
+                </a>
+                <a href="Cover_Letter_Sample.pdf" download class="flex items-center justify-between p-6 bg-blue-800 rounded-lg hover:bg-blue-700 transition border border-blue-600 shadow-md">
+                    <span class="font-bold tracking-tight">Sample Cover Letter</span>
+                    <i class="fas fa-download opacity-50"></i>
+                </a>
+                <a href="Research_Portfolio.pdf" download class="flex items-center justify-between p-6 bg-blue-800 rounded-lg hover:bg-blue-700 transition border border-blue-600 shadow-md">
+                    <span class="font-bold tracking-tight">Research Portfolio</span>
+                    <i class="fas fa-download opacity-50"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-20 bg-white border-t-8 border-gold text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-cdc mb-4 uppercase tracking-widest">Let's Collaborate</h2>
+            <p class="text-gray-600 mb-8 italic">"Open to collaborations on global health economics, causal inference, and data science."</p>
+            <div class="flex justify-center space-x-12 text-4xl mb-12 text-cdc opacity-80">
+                <a href="mailto:cdhakal@cdcfoundation.org" class="hover:text-blue-500"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/chandra-dhakal" target="_blank" class="hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-blue-500"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+            <div class="text-xs font-bold text-gray-500 tracking-widest uppercase">
+                &copy; 2026 Chandra K. Dhakal, PhD | Health Economist | CDC Foundation
+            </div>
+        </div>
     </footer>
 
 </body>
