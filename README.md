@@ -1,6 +1,6 @@
-# Chandra K. Dhakal, PhD
+# Chandra Dhakal, PhD
 
-Personal website for Dr. Chandra K. Dhakal - Health Economist at CDC Foundation
+Personal website for Dr. Chandra Dhakal - Health Economist at CDC Foundation
 
 🌐 Visit my website: [https://dhakalck.github.io](https://dhakalck.github.io)
 
